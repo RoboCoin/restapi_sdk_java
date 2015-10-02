@@ -154,6 +154,8 @@ public class TRANSACTION  implements java.io.Serializable {
            java.lang.String RISK_REASON1,
            java.lang.String RISK_REASON2,
            java.lang.String RISK_REASON3,
+           java.lang.String RISK_REASON4,
+           java.lang.String RISK_REASON5,
            com.securenet.gateway.API.Contracts.MERCHANT_KEY SECONDARY_MERCHANT_KEY,
            com.securenet.gateway.API.Contracts.SERVICE SERVICE,
            java.lang.String SOFTDESCRIPTOR,
@@ -205,7 +207,7 @@ public class TRANSACTION  implements java.io.Serializable {
            this.RISK_REASON2 = RISK_REASON2;
            this.RISK_REASON3 = RISK_REASON3;
            this.RISK_REASON4 = RISK_REASON4;
-            this.RISK_REASON5 = RISK_REASON5;
+           this.RISK_REASON5 = RISK_REASON5;
            this.SECONDARY_MERCHANT_KEY = SECONDARY_MERCHANT_KEY;
            this.SERVICE = SERVICE;
            this.SOFTDESCRIPTOR = SOFTDESCRIPTOR;
