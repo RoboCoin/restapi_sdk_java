@@ -80,6 +80,18 @@ public class TRANSACTIONRESPONSE  extends com.securenet.gateway.API.Contracts.RE
 
     private java.lang.String RETREFERENCENUM;
 
+    private java.lang.String RISK_CATEGORY;
+
+    private java.lang.String RISK_REASON1;
+
+    private java.lang.String RISK_REASON2;
+
+    private java.lang.String RISK_REASON3;
+
+    private java.lang.String RISK_REASON4;
+
+    private java.lang.String RISK_REASON5;
+
     private java.lang.Integer SECURENETID;
 
     private java.math.BigDecimal SETTLEMENTAMOUNT;
@@ -140,6 +152,12 @@ public class TRANSACTIONRESPONSE  extends com.securenet.gateway.API.Contracts.RE
            java.lang.String ORDERID,
            java.lang.String PAYMENTID,
            java.lang.String RETREFERENCENUM,
+           java.lang.String RISK_CATEGORY,
+           java.lang.String RISK_REASON1,
+           java.lang.String RISK_REASON2,
+           java.lang.String RISK_REASON3,
+           java.lang.String RISK_REASON4,
+           java.lang.String RISK_REASON5,
            java.lang.Integer SECURENETID,
            java.math.BigDecimal SETTLEMENTAMOUNT,
            java.lang.String SETTLEMENTDATETIME,
@@ -189,6 +207,12 @@ public class TRANSACTIONRESPONSE  extends com.securenet.gateway.API.Contracts.RE
         this.ORDERID = ORDERID;
         this.PAYMENTID = PAYMENTID;
         this.RETREFERENCENUM = RETREFERENCENUM;
+        this.RISK_CATEGORY = RISK_CATEGORY;
+        this.RISK_REASON1 = RISK_REASON1;
+        this.RISK_REASON2 = RISK_REASON2;
+        this.RISK_REASON3 = RISK_REASON3;
+        this.RISK_REASON4 = RISK_REASON4;
+        this.RISK_REASON5 = RISK_REASON5;
         this.SECURENETID = SECURENETID;
         this.SETTLEMENTAMOUNT = SETTLEMENTAMOUNT;
         this.SETTLEMENTDATETIME = SETTLEMENTDATETIME;
@@ -919,6 +943,53 @@ public class TRANSACTIONRESPONSE  extends com.securenet.gateway.API.Contracts.RE
         this.RETREFERENCENUM = RETREFERENCENUM;
     }
 
+    public String getRISK_CATEGORY() {
+        return RISK_CATEGORY;
+    }
+
+    public void setRISK_CATEGORY(String RISK_CATEGORY) {
+        this.RISK_CATEGORY = RISK_CATEGORY;
+    }
+
+    public String getRISK_REASON1() {
+        return RISK_REASON1;
+    }
+
+    public void setRISK_REASON1(String RISK_REASON1) {
+        this.RISK_REASON1 = RISK_REASON1;
+    }
+
+    public String getRISK_REASON2() {
+        return RISK_REASON2;
+    }
+
+    public void setRISK_REASON2(String RISK_REASON2) {
+        this.RISK_REASON2 = RISK_REASON2;
+    }
+
+    public String getRISK_REASON3() {
+        return RISK_REASON3;
+    }
+
+    public void setRISK_REASON3(String RISK_REASON3) {
+        this.RISK_REASON3 = RISK_REASON3;
+    }
+
+    public String getRISK_REASON4() {
+        return RISK_REASON4;
+    }
+
+    public void setRISK_REASON4(String RISK_REASON4) {
+        this.RISK_REASON4 = RISK_REASON4;
+    }
+
+    public String getRISK_REASON5() {
+        return RISK_REASON5;
+    }
+
+    public void setRISK_REASON5(String RISK_REASON5) {
+        this.RISK_REASON5 = RISK_REASON5;
+    }
 
     /**
      * Gets the SECURENETID value for this TRANSACTIONRESPONSE.
@@ -1199,6 +1270,24 @@ public class TRANSACTIONRESPONSE  extends com.securenet.gateway.API.Contracts.RE
             ((this.RETREFERENCENUM==null && other.getRETREFERENCENUM()==null) || 
              (this.RETREFERENCENUM!=null &&
               this.RETREFERENCENUM.equals(other.getRETREFERENCENUM()))) &&
+            ((this.RISK_CATEGORY==null && other.getRISK_CATEGORY()==null) ||
+            (this.RISK_CATEGORY!=null &&
+            this.RISK_CATEGORY.equals(other.getRISK_CATEGORY()))) &&
+            ((this.RISK_REASON1==null && other.getRISK_REASON1()==null) ||
+            (this.RISK_REASON1!=null &&
+            this.RISK_REASON1.equals(other.getRISK_REASON1()))) &&
+            ((this.RISK_REASON2==null && other.getRISK_REASON2()==null) ||
+            (this.RISK_REASON2!=null &&
+            this.RISK_REASON2.equals(other.getRISK_REASON2()))) &&
+            ((this.RISK_REASON3==null && other.getRISK_REASON3()==null) ||
+            (this.RISK_REASON3!=null &&
+            this.RISK_REASON3.equals(other.getRISK_REASON3()))) &&
+            ((this.RISK_REASON4==null && other.getRISK_REASON4()==null) ||
+            (this.RISK_REASON4!=null &&
+            this.RISK_REASON4.equals(other.getRISK_REASON4()))) &&
+            ((this.RISK_REASON5==null && other.getRISK_REASON5()==null) ||
+            (this.RISK_REASON5!=null &&
+            this.RISK_REASON5.equals(other.getRISK_REASON5()))) &&
             ((this.SECURENETID==null && other.getSECURENETID()==null) || 
              (this.SECURENETID!=null &&
               this.SECURENETID.equals(other.getSECURENETID()))) &&
@@ -1341,6 +1430,24 @@ public class TRANSACTIONRESPONSE  extends com.securenet.gateway.API.Contracts.RE
         }
         if (getRETREFERENCENUM() != null) {
             _hashCode += getRETREFERENCENUM().hashCode();
+        }
+        if (getRISK_CATEGORY() != null) {
+            _hashCode += getRISK_CATEGORY().hashCode();
+        }
+        if (getRISK_REASON1() != null) {
+            _hashCode += getRISK_REASON1().hashCode();
+        }
+        if (getRISK_REASON2() != null) {
+            _hashCode += getRISK_REASON2().hashCode();
+        }
+        if (getRISK_REASON3() != null) {
+            _hashCode += getRISK_REASON3().hashCode();
+        }
+        if (getRISK_REASON4() != null) {
+            _hashCode += getRISK_REASON4().hashCode();
+        }
+        if (getRISK_REASON5() != null) {
+            _hashCode += getRISK_REASON5().hashCode();
         }
         if (getSECURENETID() != null) {
             _hashCode += getSECURENETID().hashCode();
@@ -1624,6 +1731,48 @@ public class TRANSACTIONRESPONSE  extends com.securenet.gateway.API.Contracts.RE
         elemField = new org.apache.axis.description.ElementDesc();
         elemField.setFieldName("RETREFERENCENUM");
         elemField.setXmlName(new javax.xml.namespace.QName("http://gateway.securenet.com/API/Contracts", "RETREFERENCENUM"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("RISK_CATEGORY");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://gateway.securenet.com/API/Contracts", "RISK_CATEGORY"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("RISK_REASON1");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://gateway.securenet.com/API/Contracts", "RISK_REASON1"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("RISK_REASON2");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://gateway.securenet.com/API/Contracts", "RISK_REASON2"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("RISK_REASON3");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://gateway.securenet.com/API/Contracts", "RISK_REASON3"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("RISK_REASON4");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://gateway.securenet.com/API/Contracts", "RISK_REASON4"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("RISK_REASON5");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://gateway.securenet.com/API/Contracts", "RISK_REASON5"));
         elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
         elemField.setMinOccurs(0);
         elemField.setNillable(true);

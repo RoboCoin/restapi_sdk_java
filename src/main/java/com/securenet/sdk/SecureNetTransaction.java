@@ -203,7 +203,6 @@ class SecureNetTransaction {
 		TRANSACTION transaction = secureNet.mapper.getVerificationTransaction(request);
 		transaction.setMERCHANT_KEY(secureNet.merchantKey);
 		GATEWAYRESPONSE gatewayResponse = processTransaction(transaction, response);
-		gatewayResponse = processTransaction(transaction, response);
 		response.request = request;
 		if (request.includeRawObjects) {
 			response.rawRequest = transaction;

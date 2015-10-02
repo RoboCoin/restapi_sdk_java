@@ -76,6 +76,18 @@ public class TRANSACTION  implements java.io.Serializable {
 
     private int RETAIL_LANENUM;
 
+    private java.lang.String RISK_CATEGORY;
+
+    private java.lang.String RISK_REASON1;
+
+    private java.lang.String RISK_REASON2;
+
+    private java.lang.String RISK_REASON3;
+
+    private java.lang.String RISK_REASON4;
+
+    private java.lang.String RISK_REASON5;
+
     private com.securenet.gateway.API.Contracts.MERCHANT_KEY SECONDARY_MERCHANT_KEY;
 
     private com.securenet.gateway.API.Contracts.SERVICE SERVICE;
@@ -138,6 +150,10 @@ public class TRANSACTION  implements java.io.Serializable {
            com.securenet.gateway.API.Contracts.PRODUCT[] PRODUCTS,
            java.lang.String REF_TRANSID,
            int RETAIL_LANENUM,
+           java.lang.String RISK_CATEGORY,
+           java.lang.String RISK_REASON1,
+           java.lang.String RISK_REASON2,
+           java.lang.String RISK_REASON3,
            com.securenet.gateway.API.Contracts.MERCHANT_KEY SECONDARY_MERCHANT_KEY,
            com.securenet.gateway.API.Contracts.SERVICE SERVICE,
            java.lang.String SOFTDESCRIPTOR,
@@ -184,6 +200,12 @@ public class TRANSACTION  implements java.io.Serializable {
            this.PRODUCTS = PRODUCTS;
            this.REF_TRANSID = REF_TRANSID;
            this.RETAIL_LANENUM = RETAIL_LANENUM;
+           this.RISK_CATEGORY = RISK_CATEGORY;
+           this.RISK_REASON1 = RISK_REASON1;
+           this.RISK_REASON2 = RISK_REASON2;
+           this.RISK_REASON3 = RISK_REASON3;
+           this.RISK_REASON4 = RISK_REASON4;
+            this.RISK_REASON5 = RISK_REASON5;
            this.SECONDARY_MERCHANT_KEY = SECONDARY_MERCHANT_KEY;
            this.SERVICE = SERVICE;
            this.SOFTDESCRIPTOR = SOFTDESCRIPTOR;
@@ -878,6 +900,53 @@ public class TRANSACTION  implements java.io.Serializable {
         this.RETAIL_LANENUM = RETAIL_LANENUM;
     }
 
+    public String getRISK_CATEGORY() {
+        return RISK_CATEGORY;
+    }
+
+    public void setRISK_CATEGORY(String RISK_CATEGORY) {
+        this.RISK_CATEGORY = RISK_CATEGORY;
+    }
+
+    public String getRISK_REASON1() {
+        return RISK_REASON1;
+    }
+
+    public void setRISK_REASON1(String RISK_REASON1) {
+        this.RISK_REASON1 = RISK_REASON1;
+    }
+
+    public String getRISK_REASON2() {
+        return RISK_REASON2;
+    }
+
+    public void setRISK_REASON2(String RISK_REASON2) {
+        this.RISK_REASON2 = RISK_REASON2;
+    }
+
+    public String getRISK_REASON3() {
+        return RISK_REASON3;
+    }
+
+    public void setRISK_REASON3(String RISK_REASON3) {
+        this.RISK_REASON3 = RISK_REASON3;
+    }
+
+    public String getRISK_REASON4() {
+        return RISK_REASON4;
+    }
+
+    public void setRISK_REASON4(String RISK_REASON4) {
+        this.RISK_REASON4 = RISK_REASON4;
+    }
+
+    public String getRISK_REASON5() {
+        return RISK_REASON5;
+    }
+
+    public void setRISK_REASON5(String RISK_REASON5) {
+        this.RISK_REASON5 = RISK_REASON5;
+    }
 
     /**
      * Gets the SECONDARY_MERCHANT_KEY value for this TRANSACTION.
@@ -1224,6 +1293,24 @@ public class TRANSACTION  implements java.io.Serializable {
              (this.REF_TRANSID!=null &&
               this.REF_TRANSID.equals(other.getREF_TRANSID()))) &&
             this.RETAIL_LANENUM == other.getRETAIL_LANENUM() &&
+            ((this.RISK_CATEGORY==null && other.getRISK_CATEGORY()==null) ||
+            (this.RISK_CATEGORY!=null &&
+            this.RISK_CATEGORY.equals(other.getRISK_CATEGORY()))) &&
+            ((this.RISK_REASON1==null && other.getRISK_REASON1()==null) ||
+            (this.RISK_REASON1!=null &&
+            this.RISK_REASON1.equals(other.getRISK_REASON1()))) &&
+            ((this.RISK_REASON2==null && other.getRISK_REASON2()==null) ||
+            (this.RISK_REASON2!=null &&
+            this.RISK_REASON2.equals(other.getRISK_REASON2()))) &&
+            ((this.RISK_REASON3==null && other.getRISK_REASON3()==null) ||
+            (this.RISK_REASON3!=null &&
+            this.RISK_REASON3.equals(other.getRISK_REASON3()))) &&
+            ((this.RISK_REASON4==null && other.getRISK_REASON4()==null) ||
+            (this.RISK_REASON4!=null &&
+            this.RISK_REASON4.equals(other.getRISK_REASON4()))) &&
+            ((this.RISK_REASON5==null && other.getRISK_REASON5()==null) ||
+            (this.RISK_REASON5!=null &&
+            this.RISK_REASON5.equals(other.getRISK_REASON5()))) &&
             ((this.SECONDARY_MERCHANT_KEY==null && other.getSECONDARY_MERCHANT_KEY()==null) || 
              (this.SECONDARY_MERCHANT_KEY!=null &&
               this.SECONDARY_MERCHANT_KEY.equals(other.getSECONDARY_MERCHANT_KEY()))) &&
@@ -1369,6 +1456,24 @@ public class TRANSACTION  implements java.io.Serializable {
             _hashCode += getREF_TRANSID().hashCode();
         }
         _hashCode += getRETAIL_LANENUM();
+        if (getRISK_CATEGORY() != null) {
+            _hashCode += getRISK_CATEGORY().hashCode();
+        }
+        if (getRISK_REASON1() != null) {
+            _hashCode += getRISK_REASON1().hashCode();
+        }
+        if (getRISK_REASON2() != null) {
+            _hashCode += getRISK_REASON2().hashCode();
+        }
+        if (getRISK_REASON3() != null) {
+            _hashCode += getRISK_REASON3().hashCode();
+        }
+        if (getRISK_REASON4() != null) {
+            _hashCode += getRISK_REASON4().hashCode();
+        }
+        if (getRISK_REASON5() != null) {
+            _hashCode += getRISK_REASON5().hashCode();
+        }
         if (getSECONDARY_MERCHANT_KEY() != null) {
             _hashCode += getSECONDARY_MERCHANT_KEY().hashCode();
         }
@@ -1644,6 +1749,48 @@ public class TRANSACTION  implements java.io.Serializable {
         elemField.setXmlName(new javax.xml.namespace.QName("http://gateway.securenet.com/API/Contracts", "RETAIL_LANENUM"));
         elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "int"));
         elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("RISK_CATEGORY");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://gateway.securenet.com/API/Contracts", "RISK_CATEGORY"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("RISK_REASON1");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://gateway.securenet.com/API/Contracts", "RISK_REASON1"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("RISK_REASON2");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://gateway.securenet.com/API/Contracts", "RISK_REASON2"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("RISK_REASON3");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://gateway.securenet.com/API/Contracts", "RISK_REASON3"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("RISK_REASON4");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://gateway.securenet.com/API/Contracts", "RISK_REASON4"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("RISK_REASON5");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://gateway.securenet.com/API/Contracts", "RISK_REASON5"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(true);
         typeDesc.addFieldDesc(elemField);
         elemField = new org.apache.axis.description.ElementDesc();
         elemField.setFieldName("SECONDARY_MERCHANT_KEY");

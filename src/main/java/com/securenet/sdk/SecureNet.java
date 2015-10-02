@@ -35,7 +35,7 @@ import com.securenet.sdk.response.VerificationResponse;
  */
 public class SecureNet {
 
-	public static enum Environment { PRODUCTION, CERTFICATION, SANDBOX }
+	public enum Environment { PRODUCTION, CERTFICATION, SANDBOX }
 	
 	protected MERCHANT_KEY merchantKey;
 	protected MERCHANT_KEY secondaryMerchantKey;
